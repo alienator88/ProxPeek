@@ -14,22 +14,9 @@
 		C7E4E1B62CE67E7B0086C5D5 /* ProxPeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProxPeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C78EFC222CE6BEC3004A0EC8 /* Exceptions for "ProxPeek" folder in "ProxPeek" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"Preview Content/Preview Assets.xcassets",
-			);
-			target = C7E4E1B52CE67E7B0086C5D5 /* ProxPeek */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C7E4E1B82CE67E7B0086C5D5 /* ProxPeek */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				C78EFC222CE6BEC3004A0EC8 /* Exceptions for "ProxPeek" folder in "ProxPeek" target */,
-			);
 			path = ProxPeek;
 			sourceTree = "<group>";
 		};

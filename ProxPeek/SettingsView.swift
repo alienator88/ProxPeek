@@ -77,7 +77,7 @@ struct SettingsView: View {
                             .frame(width: 200)
                             .padding()
                     } else {
-                        VStack {
+                        HStack {
                             Text("No updates available")
                                 .foregroundStyle(.secondary)
                             Button("Refresh") {
@@ -87,16 +87,16 @@ struct SettingsView: View {
                         .padding()
 
                     }
-
-                    FrequencyView(updater: updater)
-                        .padding()
-                        .background {
-                            RoundedRectangle(cornerRadius: 8)
-                                .fill(Color.secondary.opacity(0.1))
-                        }
-
                     Spacer()
                 }
+
+                FrequencyView(updater: updater)
+                    .padding()
+                    .frame(width: 350)
+                    .background {
+                        RoundedRectangle(cornerRadius: 8)
+                            .fill(Color.secondary.opacity(0.1))
+                    }
 
 
                 Divider().padding(.vertical)
