@@ -16,7 +16,7 @@ struct ContentView: View {
 
             HStack {
                 Spacer()
-                Image("proxmox") // Replace "yourImageName" with your actual image asset name
+                Image("proxmox")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 25, height: 25)
@@ -39,7 +39,7 @@ struct ContentView: View {
             if api.appReady() {
                 ScrollView(showsIndicators: false) {
                     // Filter and display LXC VMs
-                    let lxcVMs = api.vms.filter { $0.type == "lxc" }.sorted(by: { $0.name < $1.name })
+                    let lxcVMs = api.vms.filter { $0.type == "lxc" }.sorted(by: { $0.id < $1.id })
                     if !lxcVMs.isEmpty {
                         Text("Containers")
                             .font(.headline)
@@ -53,7 +53,7 @@ struct ContentView: View {
                     }
 
                     // Filter and display QEMU VMs
-                    let qemuVMs = api.vms.filter { $0.type == "qemu" }.sorted(by: { $0.name < $1.name })
+                    let qemuVMs = api.vms.filter { $0.type == "qemu" }.sorted(by: { $0.id < $1.id })
                     if !qemuVMs.isEmpty {
                         Text("Virtual Machines")
                             .font(.headline)
